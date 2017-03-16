@@ -4,9 +4,12 @@ initial: 'nope',
 //please select the enter-state here ↓
 events: [
 {"name":"startup","from":"nope","to":"sleeping"},
+{"name":"pick","from":"sleeping","to":"picking"},
+{"name":"sleep","from":"picking","to":"sleeping"},
 {"name":"sleep","from":"following","to":"sleeping"},
-{"name":"throw","from":"sleeping","to":"throwing"},
-{"name":"follow","from":"throwing","to":"following"}
+{"name":"sleep","from":"throwing","to":"sleeping"},
+{"name":"follow","from":"sleeping","to":"following"},
+{"name":"throw","from":"picking","to":"throwing"}
 ]
 };
 let create = function(){

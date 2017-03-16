@@ -22,6 +22,7 @@ cc.Class({
             let dirVector = cc.pNormalize(this.node.convertToNodeSpaceAR(e.getLocation()));
             let dropPickControl = this._dropPickControl;
             this._dropPickControl._pickedEnemy.getComponent('enemy-control').throw(startPosition,dirVector,dropPickControl);
+            //this._dropPickControl._pickedEnemy.getComponent("enemy-control")._fsm.throw({startPosition,dirVector,dropPickControl});
         }
     }
 

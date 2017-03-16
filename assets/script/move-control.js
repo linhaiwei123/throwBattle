@@ -7,7 +7,7 @@ cc.Class({
         _right: false,
         _up: false,
         _down: false,
-        movePixel: 5,
+        movePixel: 80,
 
         //block prop
         _leftBlock: false,
